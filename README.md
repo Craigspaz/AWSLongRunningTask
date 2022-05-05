@@ -7,7 +7,7 @@ Sometimes you need to run a automated task that cannot be run in an AWS Lambda f
 1. Use a different service/product such as ECS
 
 ## Pros and Cons of the solutions above
-1. The first solution above has the pro of it all running in an AWS Lambda function but the con of having to break work up into chunks. Sometimes this is easy. Such as if you are paging through results and processing them, you can have the the function invoke itself with the next page of results it needs to process. A problem is this can add complexity as you need to make a recursive function and/or your use case does not easily use
+1. The first solution above has the pro of it all running in an AWS Lambda function but the con of having to break work up into chunks. Sometimes this is easy. Such as if you are paging through results and processing them, you can have the the function invoke itself with the next page of results it needs to process. A problem is this can add complexity as you need to make a recursive function and/or your use case does not easily use.
 1. The second solution above has the pro of you do not have to chunkify the task. The con is that you need to keep track of time. This adds lots of complexity.
 
 ## A Different Solution
